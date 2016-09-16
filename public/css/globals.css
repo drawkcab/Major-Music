@@ -67,5 +67,70 @@ body{
 .player .player__backward button:hover,
 .player .player__forward button:hover{
   color: rgba(243, 139, 114, 0.7);
-  border: 1px silid rgba(243, 139, 114, 0.7);
+  border: 1px solid rgba(243, 139, 114, 0.7);
+}
+
+.player .player__main {
+  border: 1px solid rgb(243, 139, 114);
+}
+
+.player .player__main button{
+  color: rgb(243, 139, 114);
+  background: transparent;
+  width: 75px;
+  height: 75px;
+  border: none;
+  font-size: 35px;
+  outline: none;
+}
+
+.progress{
+  text-align: center;
+  margin-top: 100px;
+  color: white;
+}
+
+.progress progress[value]{
+  /*Reset defaut appearance*/
+  -webkit-appearance: none;
+  appearance: none;
+
+  width: 390px;
+  height: 20px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.progress progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba( 0, 0, 0, 0.25) inset;
+}
+
+.progress progress[value]::-webkit-progress-value {
+  background-color: rgb(243, 139, 114);
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+.footer{
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background: #524C4C;
+}
+
+.footer p{
+  text-align: center;
+}
+
+/*.footer .logo{
+  height: 25px;
+  width: auto;
+}*/
+
+.footer .soundcloud{
+  height: 25px;
+  width: auto;
 }
