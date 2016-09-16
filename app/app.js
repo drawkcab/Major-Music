@@ -3,20 +3,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-//Import search Component
-import Search from './components/search.component';
-
-//Import search Details
-import Details from './components/details.component';
-
-//Import search Player
-import Player from './components/player.component';
-
-//Import search Progress
-import Progress from './components/progress.component';
-
-//Import search Footer
-import Footer from './components/footer.component';
+//Import App container
+import AppContainer from './containers/app.container';
 
 class App extends React.Component {
 
@@ -24,16 +12,7 @@ class App extends React.Component {
   // render returns jsx
   render() {
     return (
-      <div>
-        <Search />
-        <Details title={'Track title'} />
-        <Player />
-        <Progress
-          position={'0.3'}
-          elapsed={'00:00'}
-          total={'0:40'}/>
-        <Footer />
-      </div>
+      <AppContainer />
     );
   }
 }
