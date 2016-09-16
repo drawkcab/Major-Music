@@ -1,0 +1,71 @@
+/*Box sizing resets*/
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/*Body rets and fonts*/
+body{
+  margin: 0;
+  font-family:  'Exo 2', sans-serif;
+}
+
+.major_music{
+  position: relative;
+}
+
+.search div, .search input {
+  width: 100%;
+}
+
+.search input {
+  border: none;
+  border-bottom: 2px solid rgb(243, 139, 114);
+  outline: none;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+}
+
+.details h3{
+  text-align: center;
+  padding: 50px 10px;
+  margin:0;
+  color: white;
+}
+
+.player{
+  text-align: center;
+  margin-top: 60px;
+}
+
+.player div{
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.player .player__backward button,
+.player .player__forward button{
+  background: transparent;
+  border: 1px solid rgb(243, 139, 114);
+  color: rgb(243, 139, 114);
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  font-size: 35px;
+  outline: none;
+}
+
+.player .player__backward button{
+  border-left: none;
+}
+
+.player .player__forward button{
+  border-radius: none;
+}
+
+.player .player__main button:hover,
+.player .player__backward button:hover,
+.player .player__forward button:hover{
+  color: rgba(243, 139, 114, 0.7);
+  border: 1px silid rgba(243, 139, 114, 0.7);
+}
